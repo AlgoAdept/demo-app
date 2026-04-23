@@ -76,11 +76,11 @@ jobs:
           script: |
             set -e
             set -x
-
+            
             echo "Connected to EC2"
 
             cd /home/ec2-user
-
+            sudo yum install git -y
             rm -rf demo-app
 
             echo "Cloning repo..."
